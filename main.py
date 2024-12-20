@@ -1,5 +1,7 @@
 # Создание экземпляра класса для работы с API сайтов с вакансиями
 from src.api_query import HeadHunterAPI
+from src.utils import JsonVacancy
+from src.vacancies import Vacancy
 
 hh_api = HeadHunterAPI()
 
@@ -7,13 +9,13 @@ hh_api = HeadHunterAPI()
 hh_vacancies = hh_api.get_vacancies("Python")
 
 # Преобразование набора данных из JSON в список объектов
-vacancies_list = Vacancy.cast_to_object_list(hh_vacancies)
+vacancies_list = Vacancy.vacancy_from_list(hh_vacancies)
 
 # Пример работы конструктора класса с одной вакансией
-vacancy = Vacancy("Python Developer", "<https://hh.ru/vacancy/123456>", "100 000-150 000 руб.", "Требования: опыт работы от 3 лет...")
+vacancy = Vacancy("Python Developer", "Москва", 100000, 150000, "https://hh.ru/vacancy/111348872")
 
 # Сохранение информации о вакансиях в файл
-json_saver = JSONSaver()
+json_saver = JsonVacancy()
 json_saver.add_vacancy(vacancy)
 json_saver.delete_vacancy(vacancy)
 
