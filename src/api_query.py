@@ -48,13 +48,6 @@ class HeadHunterAPI(BaseHH, ABC):
         self.__params['text'] = keyword
         while self.__params.get('page') != 20:
             answer = self._BaseHH__connect_to_api()
-            vacancies = answer.json()['items']
+            vacancies = answer.json().get('items', [])
             self.__vacancies.extend(vacancies)
             self.__params['page'] += 1
-
-
-# Код для проверки
-if __name__ == "__main__":
-    hh_api = HeadHunterAPI()
-    hh_api.get_vacancies("РЖД")
-    print(hh_api.vacancies[0])
