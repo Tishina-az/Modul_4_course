@@ -1,1 +1,219 @@
-[]
+[
+    {
+        "name": "Программист в стартап-проект",
+        "area": "Ташкент",
+        "salary_from": 0,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/113067633"
+    },
+    {
+        "name": "Frontend-разработчик",
+        "area": "Алматы",
+        "salary_from": 0,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/114312218"
+    },
+    {
+        "name": "Junior программист на бэкенд",
+        "area": "Ташкент",
+        "salary_from": 0,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/113461808"
+    },
+    {
+        "name": "Ruby Developer",
+        "area": "Москва",
+        "salary_from": 0,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/114301798"
+    },
+    {
+        "name": "Инженер функционального тестирования",
+        "area": "Москва",
+        "salary_from": 0,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/114308737"
+    },
+    {
+        "name": "Python developer",
+        "area": "Москва",
+        "salary_from": 0,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/114298834"
+    },
+    {
+        "name": "Инженер-тестировщик",
+        "area": "Москва",
+        "salary_from": 0,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/114292510"
+    },
+    {
+        "name": "Data Engineer",
+        "area": "Астана",
+        "salary_from": 0,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/114177267"
+    },
+    {
+        "name": "Backend-разработчик(middle)",
+        "area": "Хабаровск",
+        "salary_from": 0,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/112815848"
+    },
+    {
+        "name": "Руководитель разработки",
+        "area": "Москва",
+        "salary_from": 0,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/114305046"
+    },
+    {
+        "name": "Мобильная разработка IOS (Junior)",
+        "area": "Москва",
+        "salary_from": 0,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/113703233"
+    },
+    {
+        "name": "Мобильная разработка IOS (Junior)",
+        "area": "Санкт-Петербург",
+        "salary_from": 0,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/113702997"
+    },
+    {
+        "name": "Системный аналитик",
+        "area": "Москва",
+        "salary_from": 0,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/113321813"
+    },
+    {
+        "name": "Старший бухгалтер",
+        "area": "Тверь",
+        "salary_from": 0,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/113847520"
+    },
+    {
+        "name": "Руководитель подразделения (железнодорожное подразделение)",
+        "area": "Набережные Челны",
+        "salary_from": 0,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/113824346"
+    },
+    {
+        "name": "Quality Assurance Engineer | QA | Тестировщик",
+        "area": "Томск",
+        "salary_from": 0,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/112687335"
+    },
+    {
+        "name": "Digital-маркетолог",
+        "area": "Москва",
+        "salary_from": 0,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/113019101"
+    },
+    {
+        "name": "Психолог на горячую линию",
+        "area": "Москва",
+        "salary_from": 0,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/111478765"
+    },
+    {
+        "name": "Главный специалист Отдела организации обучения",
+        "area": "Москва",
+        "salary_from": 0,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/113733236"
+    },
+    {
+        "name": "Машинист/ помощник машиниста электровоза/тепловоза",
+        "area": "Россия",
+        "salary_from": 0,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/112871298"
+    },
+    {
+        "name": "Ведущий экономист по анализу рынков",
+        "area": "Кемерово",
+        "salary_from": 0,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/114022403"
+    },
+    {
+        "name": "Middle Backend-разработчик (Python)",
+        "area": "Уфа",
+        "salary_from": 200000,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/114132247"
+    },
+    {
+        "name": "Python Разработчик (Middle)",
+        "area": "Москва",
+        "salary_from": 200000,
+        "salary_to": 250000,
+        "url": "https://hh.ru/vacancy/112770647"
+    },
+    {
+        "name": "SEO-специалист",
+        "area": "Москва",
+        "salary_from": 200000,
+        "salary_to": 250000,
+        "url": "https://hh.ru/vacancy/112593679"
+    },
+    {
+        "name": "Аналитик данных",
+        "area": "Москва",
+        "salary_from": 200000,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/114044788"
+    },
+    {
+        "name": "Fullstack QA (middle/senior)",
+        "area": "Москва",
+        "salary_from": 200000,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/114161590"
+    },
+    {
+        "name": "Data Analyst / Аналитик данных",
+        "area": "Москва",
+        "salary_from": 200000,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/110444980"
+    },
+    {
+        "name": "Аналитик данных",
+        "area": "Москва",
+        "salary_from": 200000,
+        "salary_to": 350000,
+        "url": "https://hh.ru/vacancy/112424253"
+    },
+    {
+        "name": "Бизнес-аналитик",
+        "area": "Москва",
+        "salary_from": 200000,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/113160350"
+    },
+    {
+        "name": "PHP Laravel Developer",
+        "area": "Москва",
+        "salary_from": 200000,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/109069877"
+    },
+    {
+        "name": "Инженер-робототехник",
+        "area": "Москва",
+        "salary_from": 200000,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/112175780"
+    }
+]

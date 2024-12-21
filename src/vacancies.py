@@ -47,8 +47,8 @@ class Vacancy:
 
         name = vacancy_dict.get('name')
         url = vacancy_dict.get('alternate_url')
-        salary_from = vacancy_dict.get('salary').get('from') if vacancy_dict.get('salary') else None
-        salary_to = vacancy_dict.get('salary').get('to') if vacancy_dict.get('salary') else None
+        salary_from = vacancy_dict.get('salary').get('from') if vacancy_dict.get('salary') else 0
+        salary_to = vacancy_dict.get('salary').get('to') if vacancy_dict.get('salary') else 0
         area = vacancy_dict.get('area').get('name')
         vacancy = cls(name, area, salary_from, salary_to, url)
         return vacancy
@@ -57,6 +57,11 @@ class Vacancy:
     def vacancy_from_list(cls, vacancy_list: List[Dict]) -> List['Vacancy']:
         """ Получаем список объектов Vacancy из списка словарей """
         return [cls.vacancy_from_dict(vacancy) for vacancy in vacancy_list]
+
+    @staticmethod
+    def to_list(vacancies_list: List['Vacancy']):
+        """ Преобразование списка объектов Vacancy в список словарей """
+        return [vacancy.to_dict() for vacancy in vacancies_list]
 
     def to_dict(self) -> Dict:
         """ Преобразование объекта Vacancy в словарь"""
