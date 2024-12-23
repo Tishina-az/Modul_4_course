@@ -47,8 +47,8 @@ class Vacancy:
 
         name = vacancy_dict.get('name')
         url = vacancy_dict.get('alternate_url')
-        salary_from = vacancy_dict.get('salary').get('from') if vacancy_dict.get('salary') else 0
-        salary_to = vacancy_dict.get('salary').get('to') if vacancy_dict.get('salary') else 0
+        salary_from = vacancy_dict.get('salary').get('from') if vacancy_dict.get('salary') else None
+        salary_to = vacancy_dict.get('salary').get('to') if vacancy_dict.get('salary') else None
         area = vacancy_dict.get('area').get('name')
         vacancy = cls(name, area, salary_from, salary_to, url)
         return vacancy

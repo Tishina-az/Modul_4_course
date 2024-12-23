@@ -215,5 +215,12 @@
         "salary_from": 200000,
         "salary_to": 0,
         "url": "https://hh.ru/vacancy/112175780"
+    },
+    {
+        "name": "Программист-математик",
+        "area": "Санкт-Петербург",
+        "salary_from": 200000,
+        "salary_to": 0,
+        "url": "https://hh.ru/vacancy/114516029"
     }
 ]
