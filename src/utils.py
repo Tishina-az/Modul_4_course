@@ -1,7 +1,6 @@
 import json
 import os.path
 from abc import ABC, abstractmethod
-from typing import Any
 
 from src.vacancies import Vacancy
 
@@ -10,8 +9,8 @@ class BaseVacancyFile(ABC):
     """Базовый класс для работы с файлами вакансий"""
 
     @abstractmethod
-    def load_vacancies(self) -> Any:
-        """Получение списка объектов Vacancy из файла JSON"""
+    def load_vacancies(self) -> list[dict]:
+        """Получение списка словарей с вакансиями из файла JSON"""
         pass
 
     @abstractmethod
@@ -34,7 +33,7 @@ class JsonVacancy(BaseVacancyFile):
         self.path_to_file = os.path.join(os.path.dirname(__file__), "..", "data", self.__filename)
 
     def load_vacancies(self) -> list[dict]:
-        """Получение списка объектов Vacancy из файла JSON"""
+        """Получение списка словарей с вакансиями из файла JSON"""
         try:
             with open(self.path_to_file, "r", encoding="utf-8") as f:
                 data = json.load(f)

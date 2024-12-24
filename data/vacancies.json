@@ -222,5 +222,26 @@
         "salary_from": 200000,
         "salary_to": 0,
         "url": "https://hh.ru/vacancy/114516029"
+    },
+    {
+        "name": "Middle QA инженер (удаленно)",
+        "area": "Москва",
+        "salary_from": 150000,
+        "salary_to": 250000,
+        "url": "https://hh.ru/vacancy/112690462"
+    },
+    {
+        "name": "Junior DevOps Engineer",
+        "area": "Москва",
+        "salary_from": 150000,
+        "salary_to": 220000,
+        "url": "https://hh.ru/vacancy/114290207"
+    },
+    {
+        "name": "Разработчик Python",
+        "area": "Москва",
+        "salary_from": 150000,
+        "salary_to": 250000,
+        "url": "https://hh.ru/vacancy/113812224"
     }
 ]
