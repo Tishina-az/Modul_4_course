@@ -33,15 +33,13 @@ class JsonVacancy(BaseVacancyFile):
         self.__filename = filename
         self.path_to_file = os.path.join(os.path.dirname(__file__), "..", "data", self.__filename)
 
-    def load_vacancies(self) -> Any:
+    def load_vacancies(self) -> list[dict]:
         """Получение списка объектов Vacancy из файла JSON"""
         try:
             with open(self.path_to_file, "r", encoding="utf-8") as f:
                 data = json.load(f)
                 return data
-        except FileNotFoundError:
-            return []
-        except json.JSONDecodeError:
+        except (FileNotFoundError, json.JSONDecodeError):
             return []
 
     def add_vacancy(self, vacancy: Vacancy) -> None:

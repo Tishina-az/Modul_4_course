@@ -18,7 +18,7 @@ class TestHeadHunterAPI(unittest.TestCase):
         mock_response.json.return_value = {"items": []}
         mock_get.return_value = mock_response
 
-        response = self.api._BaseHH__connect_to_api()
+        response = self.api._connect_to_api()
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json(), {"items": []})
 
@@ -30,7 +30,7 @@ class TestHeadHunterAPI(unittest.TestCase):
         mock_get.return_value = mock_response
 
         with self.assertRaises(ValueError) as context:
-            self.api._BaseHH__connect_to_api()
+            self.api._connect_to_api()
 
         self.assertEqual(str(context.exception), "Ошибка 404, попробуйте ещё раз!")
 

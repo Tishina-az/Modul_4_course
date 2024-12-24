@@ -9,7 +9,7 @@ class BaseHH(ABC):
     """ Абстрактный класс для работы с API HeadHunter """
 
     @abstractmethod
-    def __connect_to_api(self) -> Response:
+    def _connect_to_api(self) -> Response:
         """ Метод подключения к API """
         pass
 
@@ -19,7 +19,7 @@ class BaseHH(ABC):
         pass
 
 
-class HeadHunterAPI(BaseHH, ABC):
+class HeadHunterAPI(BaseHH):
     """ Класс для работы с API HeadHunter """
 
     def __init__(self) -> None:
@@ -34,7 +34,7 @@ class HeadHunterAPI(BaseHH, ABC):
         """ Метод, возвращающий список вакансий """
         return self.__vacancies
 
-    def _BaseHH__connect_to_api(self) -> Response:
+    def _connect_to_api(self) -> Response:
         """ Метод подключения к API """
         response = requests.get(self.__url, headers=self.__headers, params=self.__params)
         status_code = response.status_code
@@ -47,7 +47,7 @@ class HeadHunterAPI(BaseHH, ABC):
         """ Метод получения списка вакансий по ключевому слову """
         self.__params['text'] = keyword
         while self.__params.get('page') != 20:
-            answer = self._BaseHH__connect_to_api()
+            answer = self._connect_to_api()
             vacancies = answer.json().get('items', [])
             self.__vacancies.extend(vacancies)
             self.__params['page'] += 1
